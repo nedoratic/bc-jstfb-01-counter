@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: #f6f6f6;
+	color: #333333;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.app__display {
+	font-size: 20rem;
+}
+
+.app__btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	width: 5em;
+	height: 5em;
+	margin: 1em;
+	padding: 1.4em;
+
+	background: transparent;
+	border: 1px solid #bbbbbb;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	outline: none;
+	border: 1px solid #333333;
+}
