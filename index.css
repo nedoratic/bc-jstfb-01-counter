@@ -30,7 +30,7 @@ body {
 	font-size: 20rem;
 }
 
-.app__btns {
+.app__buttons {
 	display: flex;
 	justify-content: center;
 	align-items: center;
