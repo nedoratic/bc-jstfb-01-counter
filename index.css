@@ -53,7 +53,8 @@ body {
 	}
 }
 
-.app__buttons {
+.app__buttons,
+.app__display {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -68,9 +69,6 @@ body {
 	background: transparent;
 	border: 1px solid var(--secondary-color);
 	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	cursor: pointer;
 }
 
