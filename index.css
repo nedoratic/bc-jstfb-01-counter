@@ -1,3 +1,4 @@
+/* Global Reset */
 *,
 *::before,
 *::after {
@@ -6,17 +7,28 @@
 	padding: 0;
 }
 
+/* Variables */
+:root {
+	--font-family: 'Montserrat', sans-serif;
+	--primary-color: #333333;
+	--secondary-color: #bbbbbb;
+	--tertiary-color: #f7f7f7;
+	--background-color: ;
+}
+
+/* Base Styles */
 html {
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-family);
 }
 
 body {
 	width: 100vw;
 	height: 100vh;
-	background: #f6f6f6;
-	color: #333333;
+	background: var(--tertiary-color);
+	color: var(--primary-color);
 }
 
+/* App Styles */
 .app {
 	display: flex;
 	flex-direction: column;
@@ -36,25 +48,23 @@ body {
 	align-items: center;
 }
 
+/* Button Styles */
 .btn {
 	width: 5em;
 	height: 5em;
 	margin: 1em;
 	padding: 1.4em;
-
 	background: transparent;
-	border: 1px solid #bbbbbb;
+	border: 1px solid var(--secondary-color);
 	border-radius: 50%;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
 	outline: none;
-	border: 1px solid #333333;
+	border-color: var(--primary-color);
 }
