@@ -44,6 +44,7 @@ function handleKeyDown(event) {
 	switch (event.key) {
 		case 'ArrowDown':
 		case 'ArrowLeft':
+		case 'VolumeDown':
 			decrement();
 			break;
 		case 'Escape':
@@ -52,6 +53,7 @@ function handleKeyDown(event) {
 			break;
 		case 'ArrowUp':
 		case 'ArrowRight':
+		case 'VolumeUp':
 			increment();
 			break;
 		default:
