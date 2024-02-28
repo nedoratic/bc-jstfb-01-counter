@@ -5,11 +5,16 @@ const resetBtn = document.querySelector('.btn--reset');
 const incrementBtn = document.querySelector('.btn--increment');
 
 // State
-let count = 0;
+let count = localStorage.getItem('count') ? parseInt(localStorage.getItem('count')) : 0;
 
 // Update Display function
 const updateDisplay = () => {
 	display.textContent = count;
+};
+
+// Update local storage
+const updateLocalStorage = () => {
+	localStorage.setItem('count', count);
 };
 
 // Initial display update
@@ -19,18 +24,21 @@ updateDisplay();
 const decrement = () => {
 	count--;
 	updateDisplay();
+	updateLocalStorage();
 };
 
 // Reset function
 const reset = () => {
 	count = 0;
 	updateDisplay();
+	updateLocalStorage();
 };
 
 // Increment function
 const increment = () => {
 	count++;
 	updateDisplay();
+	updateLocalStorage();
 };
 
 // Event listeners for on click events
