@@ -41,6 +41,18 @@ body {
 	font-size: 20rem;
 }
 
+@media (max-width: 768px) {
+	.app__display {
+		font-size: 10rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.app__display {
+		font-size: 8rem;
+	}
+}
+
 .app__buttons {
 	display: flex;
 	justify-content: center;
