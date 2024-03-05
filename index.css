@@ -53,6 +53,12 @@ body {
 	}
 }
 
+@media (max-height: 500px) {
+	.app__display {
+		font-size: 10rem;
+	}
+}
+
 .app__buttons,
 .app__display {
 	display: flex;
